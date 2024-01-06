@@ -29,6 +29,13 @@ const Navbar = () => {
             Michael <span className="sm:block hidden">| Software Engineer</span>
           </p>
         </Link>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map(({ id, title }) => (
+            <li key={id}>
+              <a href={`#${id}`}>{title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
