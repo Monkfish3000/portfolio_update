@@ -7,6 +7,7 @@ import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState();
+  const [toggle, setToggle] = useState();
 
   return (
     <nav
@@ -31,11 +32,32 @@ const Navbar = () => {
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map(({ id, title }) => (
-            <li key={id}>
+            <li
+              key={id}
+              className={`${
+                active === title ? 'text-white' : 'text-secondary'
+              } hover:text-white font-medium cursor-pointer`}
+              onClick={() => {
+                setActive(title);
+              }}
+            >
               <a href={`#${id}`}>{title}</a>
             </li>
           ))}
         </ul>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            src={toggle ? close : menu}
+            alt={menu}
+            className="object-contain cursor-pointer w-[28px] h-[28px]"
+            onClick={() => setToggle(!toggle)}
+          />
+          <div
+            className={`${
+              !toggle ? 'hidden' : 'flex'
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          ></div>
+        </div>
       </div>
     </nav>
   );
