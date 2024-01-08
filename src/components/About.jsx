@@ -83,7 +83,7 @@ const About = () => {
         >
           I’ve been living in Spain for almost a decade now. I love the food
           here and in Barcelona I’ve found the perfect combination of fantastic
-          city (with a thriving tech. scene), spectacular coastlines and nearby,
+          city (with a thriving tech. scene), spectacular coastlines and
           breathtaking mountain ranges. I love this city. I also love technology
           and literally learn something new everyday given how rapidly new tech.
           is developed. Recently I have been trying to get my head around web3

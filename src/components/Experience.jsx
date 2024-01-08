@@ -13,19 +13,42 @@ import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => {
+  const { icon, iconBg, title, company_name, date } = experience;
   return (
     <VerticalTimelineElement
       contentStyle={{ background: '#1d1836', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid #232631' }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      date={date}
+      iconStyle={{ background: iconBg }}
       icon={
-        <div>
-          <img src={experience.icon} alt={experience.title} />
+        <div className="flex h-full w-full justify-center items-center">
+          <img
+            className="w-[60%] h-[60%] object-contain"
+            src={icon}
+            alt={title}
+          />
         </div>
       }
     >
-      {experience.date}
+      <div>
+        <h3 className="text-white text-[24px] font-bold">{title}</h3>
+        <p
+          className="text-secondary text-[16px] font-semibold"
+          style={{ margin: 0 }}
+        >
+          {company_name}
+        </p>
+      </div>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
+        {experience.points.map((point, idx) => (
+          <li
+            key={`experience-point-${idx}`}
+            className="text-white-100 text-[14px] pl-1 tracking-wider"
+          >
+            {point}
+          </li>
+        ))}
+      </ul>
     </VerticalTimelineElement>
   );
 };
