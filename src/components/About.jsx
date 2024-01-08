@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { Tilt } from 'react-tilt';
+import { SectionWrapper } from '../hoc';
 
 const textVariant = (delay) => {
   return {
@@ -98,4 +99,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, 'about');
