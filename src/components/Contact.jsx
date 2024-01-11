@@ -30,8 +30,8 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .send(
-        'service_irct4hj',
-        'template_lmtnf6n',
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_USER_ID,
         {
           from_name: form.name,
           to_name: 'Michael',
@@ -39,7 +39,7 @@ const Contact = () => {
           to_email: 'michaelsutcliffe86@gmail.com',
           message: form.message,
         },
-        'nLVGxCfJx3d9hbLB9'
+        process.env.EMAILJS_API_KEY
       )
       .then(
         () => {
