@@ -65,6 +65,12 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
+          <button
+            className="bg-tertiary py-3 px-8 w-fit text-white outline-none font-bold shadow-md shadow-primary rounded-xl"
+            type="submit"
+          >
+            {loading ? 'Sending' : 'Sent'}
+          </button>
         </form>
       </motion.div>
     </div>
