@@ -28,7 +28,7 @@ const FeedBackCard = ({
               <span className="blue-text-gradient">@</span> {name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">
-              {designation} of {name}
+              {designation} of {company}
             </p>
           </div>
           <img
@@ -49,8 +49,8 @@ const Feedbacks = () => {
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={`${styles.sectionSubText}`}>What others say</p>
-          <h2 className={`${styles.sectionHeadText}`}>Testimonials.</h2>
+          <p className={`${styles.sectionSubText}`}>Friends & Colleagues</p>
+          <h2 className={`${styles.sectionHeadText}`}>What Others Say.</h2>
         </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
