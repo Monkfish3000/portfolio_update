@@ -25,6 +25,8 @@ import {
   threejs,
 } from '../assets';
 
+import ryanCorriganImg from '../assets/images/ryan.png';
+
 export const navLinks = [
   {
     id: 'about',
@@ -167,12 +169,11 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+    testimonial: 'Michael is a great guy, and an even better developer.',
+    name: 'Ryan Corrigan',
+    designation: 'BDR',
+    company: 'Confluent',
+    image: ryanCorriganImg,
   },
   {
     testimonial:
