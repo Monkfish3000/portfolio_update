@@ -16,9 +16,10 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
   shopify,
+  lewagon,
+  ala,
+  learnlight,
   carrent,
   jobit,
   tripguide,
@@ -26,10 +27,8 @@ import {
 } from '../assets';
 
 import ryanCorriganImg from '../assets/images/ryan.png';
-import jadeImg from '../assets/images/jade.png';
 import seanImg from '../assets/images/sean.png';
 import kelseyImg from '../assets/images/kelsey.png';
-import dannyImg from '../assets/images/danny.png';
 import donalImg from '../assets/images/donal.png';
 
 export const navLinks = [
@@ -119,11 +118,33 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'Academic Coordinator | Platform Administrator',
+    company_name: 'American Language Academy',
+    icon: ala,
+    iconBg: '#fff',
+    date: 'July 2013 - September 2016',
+    points: [
+      'Key administrator of the in-house LMS (Learning Management System) platform. My responsibilities included daily maintenance and updates of the platform, designing new educational content, bug fixing as well as training teachers on how to use the platform.',
+    ],
+  },
+  {
+    title: 'Le Wagon Coding Bootcamp',
+    company_name: 'Le Wagon',
+    icon: lewagon,
+    iconBg: '#fff',
+    date: 'July 2020 - October',
+    points: [
+      'The Le Wagon web development course was both intensely challenging and immensely rewarding. I embarked on this journey to advance my professional growth and explore new possibilities.',
+      "Throughout the course, we gained not only the fundamental tools and skills for web development but also got acquainted with contemporary workflows and practices, particularly agile methodology. Collaboration was a major focus, providing real insight into team dynamics in a developer's environment.",
+      ' Our projects were built on Object-Oriented principles, employing Ruby and the Rails framework, and integrating HTML, CSS, JavaScript, as well as Relational Databases, SQL, and Active Record (ORM). We also delved into API usage, learning how to incorporate them into our projects effectively. ',
+    ],
+  },
+  {
+    title: 'Junior Software Engineer',
+    company_name: 'LearnLight',
+    icon: learnlight,
+    iconBg: '#fff',
+    date: 'Jun 2021 - Feb 2023',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -132,37 +153,11 @@ const experiences = [
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
+    title: 'Software Engineer',
+    company_name: 'LearnLight',
+    icon: learnlight,
+    iconBg: '#fff',
+    date: 'Feb 2023 - Present',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
