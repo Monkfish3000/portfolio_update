@@ -26,6 +26,11 @@ import {
 } from '../assets';
 
 import ryanCorriganImg from '../assets/images/ryan.png';
+import jadeImg from '../assets/images/jade.png';
+import seanImg from '../assets/images/sean.png';
+import kelseyImg from '../assets/images/kelsey.png';
+import dannyImg from '../assets/images/danny.png';
+import donalImg from '../assets/images/donal.png';
 
 export const navLinks = [
   {
@@ -169,7 +174,16 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial: 'Michael is a great guy, and an even better developer.',
+    testimonial:
+      'I worked with Michael for more than 4 years and it was a pleasure to do so. A constant professional and someone who obviously cared a lot about our product and about our clients getting the most from it!',
+    name: "Donal O'Meara",
+    designation: 'Product Manager',
+    company: 'ePages',
+    image: donalImg,
+  },
+  {
+    testimonial:
+      "In all the years I've known Michael, he's consistently shown himself to be not only a skilled developer but also a compassionate and supportive friend.",
     name: 'Ryan Corrigan',
     designation: 'BDR',
     company: 'Confluent',
@@ -177,19 +191,19 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+      "Michael's enthusiasm and passion for frontend development are contagious. He's not just doing a job; he's following his calling.",
+    name: 'Sean Malkin',
+    designation: 'Sales Leader',
+    company: 'CRITEO',
+    image: seanImg,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+      "Michael's ability to translate complex technical concepts into easy-to-understand language is remarkable. He tackles challenges with patience and ingenuity. He's an excellent teacher and an asset to any team.",
+    name: 'Kelsey Shawgo',
+    designation: 'Profesora y Coordinadora Académica',
+    company: 'Universidad Pontificia Comillas ICAI-ICADE',
+    image: kelseyImg,
   },
 ];
 
