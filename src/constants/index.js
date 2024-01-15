@@ -1,6 +1,7 @@
 import {
   creator,
   web,
+  backend,
   javascript,
   typescript,
   html,
@@ -16,6 +17,7 @@ import {
   ala,
   learnlight,
   carrent,
+  monkflicks,
   jobit,
   tripguide,
   threejs,
@@ -55,6 +57,10 @@ const services = [
   {
     title: 'Front End Developer',
     icon: creator,
+  },
+  {
+    title: 'EdTech Developer',
+    icon: backend,
   },
 ];
 
@@ -161,7 +167,8 @@ const experiences = [
     iconBg: '#fff',
     date: 'September 2016 - July 2020',
     points: [
-      'Before turning to web development, I worked as a Language Trainer in Madrid and Barcelona, collaborating closely with the Director of International Affairs at the CNMV in Madrid as a language coordinator. In Barcelona, I offered English language support at major firms like Allianz, CaixaBank, eDreams, Endesa, and Naturgy.',
+      'At Learnlight I delivered language training to some of the biggest companies on the planet but my sessions in both tech. start-ups and big tech. companies with groups of developers were always the most exciting for me and sparked something in me that inspired me to learn to code.',
+      'I worked as a Language Trainer in Madrid and Barcelona. I offered English language support at major firms like Allianz, CaixaBank, eDreams, Endesa, and Naturgy.',
     ],
   },
   {
@@ -171,7 +178,8 @@ const experiences = [
     iconBg: '#fff',
     date: 'July 2013 - September 2016',
     points: [
-      'Key administrator of the in-house LMS (Learning Management System) platform. My responsibilities included daily maintenance and updates of the platform, designing new educational content, bug-fixing as well as training teachers on how to use the platform.',
+      'My first passion was teaching. In 2011 in Greenwich, London I trained as an ESL teacher I moved to Spain about a year later.',
+      'At ALA I was also the key administrator of the in-house LMS (Learning Management System) platform. My responsibilities included daily maintenance and updates of the platform, designing new educational content, bug-fixing as well as training teachers on how to use the platform.',
     ],
   },
 ];
@@ -213,25 +221,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'MonkFlicks',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A fun Netflix clone I made experimenting with Firebase as the "backend" - Firebase handles user auth. and acts as a store for all the film and series data. In the frontend I made use of styled-components to, well...style the components. ||I promise it\'s not a dangerous site - Google just thinks I\'m imitating NetFlicks to trick you.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'firebase',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'styledcomponents',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: monkflicks,
+    source_code_link: 'https://github.com/Monkfish3000/monkflicks',
+    prod_link: 'https://monkflicks.web.app/',
   },
   {
     name: 'Job IT',
