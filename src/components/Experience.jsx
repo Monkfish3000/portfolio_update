@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
       icon={
         <div className="flex h-full w-full justify-center items-center">
           <img
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[100%] h-[100%] object-contain rounded-full"
             src={icon}
             alt={title}
           />

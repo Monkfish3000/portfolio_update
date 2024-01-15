@@ -20,11 +20,10 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import graphql from './tech/graphql.png';
+import selenium from './tech/selenium.png';
+import jest from './tech/jest.png';
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
 import lewagon from './company/lewagon.png';
 import ala from './company/ala.png';
 import learnlight from './company/learnlight.png';
@@ -55,10 +54,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  graphql,
+  selenium,
+  jest,
   lewagon,
   ala,
   learnlight,
