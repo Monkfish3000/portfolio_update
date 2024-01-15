@@ -12,6 +12,7 @@ const FeedBackCard = ({
   designation,
   company,
   image,
+  linkedIn,
 }) => {
   return (
     <motion.div
@@ -32,6 +33,7 @@ const FeedBackCard = ({
             </p>
           </div>
           <img
+            onClick={() => window.open(linkedIn, '_blank')}
             className="w-10 h-10 rounded-full object-cover"
             src={image}
             alt={`feedback-by-${name}`}
