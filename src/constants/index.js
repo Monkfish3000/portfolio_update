@@ -143,7 +143,7 @@ const experiences = [
     link: 'https://www.learnlight.com/',
     icon: learnlight,
     iconBg: '#fff',
-    date: 'Jun 2021 - Feb 2023',
+    date: 'June 2021 - Feb 2023',
     points: [
       'Software engineer helping to build and maintain a number of business-critial products using React, JavaScript/TypeScript, GraphQL, styled components, NodeJS, amongst a host of others.',
       'Working together with diverse teams, including designers, product managers, and fellow developers, to develop top-quality products.',
@@ -155,7 +155,7 @@ const experiences = [
     link: 'https://www.lewagon.com/',
     icon: lewagon,
     iconBg: '#fff',
-    date: 'July 2020 - October',
+    date: 'July 2020 - Oct 2020',
     points: [
       'The Le Wagon web development course was both intensely challenging and immensely rewarding. I embarked on this journey to advance my professional growth and explore new possibilities.',
       "Throughout the course, we gained not only the fundamental tools and skills for web development but also became acquainted with contemporary workflows and practices, particularly agile methodology. Collaboration was a major focus, providing real insight into team dynamics in a developer's environment.",
@@ -168,7 +168,7 @@ const experiences = [
     link: 'https://www.learnlight.com/',
     icon: learnlight,
     iconBg: '#fff',
-    date: 'September 2016 - July 2020',
+    date: 'Sept 2016 - July 2020',
     points: [
       'At Learnlight I delivered language training to some of the biggest companies on the planet but my sessions in both tech. start-ups and big tech. companies with groups of developers were always the most exciting for me and sparked something in me that inspired me to learn to code.',
       'I worked as a Language Trainer in Madrid and Barcelona. I offered English language support at major firms like Allianz, CaixaBank, eDreams, Endesa, and Naturgy.',
@@ -180,7 +180,7 @@ const experiences = [
     link: 'https://www.americanlanguage.es/',
     icon: ala,
     iconBg: '#fff',
-    date: 'July 2013 - September 2016',
+    date: 'July 2013 - Sept 2016',
     points: [
       'My first passion was teaching. In 2011 in Greenwich, London I trained as an ESL teacher I moved to Spain about a year later.',
       'At ALA I was also the key administrator of the in-house LMS (Learning Management System) platform. My responsibilities included daily maintenance and updates of the platform, designing new educational content, bug-fixing as well as training teachers on how to use the platform.',
