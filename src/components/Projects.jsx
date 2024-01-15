@@ -26,7 +26,7 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[320px]">
           <img
             src={image}
             alt={name}
@@ -95,8 +95,7 @@ const Projects = () => {
           Below are some examples of my own personal projects that I have worked
           on over the last 3 years. With each project I was always trying to
           learn a specific technology or library. Here I have included a brief
-          description, the GitHub repo and, if it is live, a link to see the
-          project itself.
+          description, the GitHub repo and the link to see the project itself.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

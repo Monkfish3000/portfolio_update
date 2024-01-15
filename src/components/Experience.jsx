@@ -13,7 +13,7 @@ import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => {
-  const { icon, iconBg, title, company_name, date } = experience;
+  const { icon, iconBg, title, company_name, date, link } = experience;
   return (
     <VerticalTimelineElement
       contentStyle={{ background: '#1d1836', color: '#fff' }}
@@ -23,6 +23,7 @@ const ExperienceCard = ({ experience }) => {
       icon={
         <div className="flex h-full w-full justify-center items-center">
           <img
+            onClick={() => window.open(link, '_blank')}
             className="w-[100%] h-[100%] object-contain rounded-full"
             src={icon}
             alt={title}

@@ -126,6 +126,7 @@ const experiences = [
   {
     title: 'Software Engineer',
     company_name: 'LearnLight',
+    link: 'https://www.learnlight.com/',
     icon: learnlight,
     iconBg: '#fff',
     date: 'Feb 2023 - Present',
@@ -139,6 +140,7 @@ const experiences = [
   {
     title: 'Junior Software Engineer',
     company_name: 'LearnLight',
+    link: 'https://www.learnlight.com/',
     icon: learnlight,
     iconBg: '#fff',
     date: 'Jun 2021 - Feb 2023',
@@ -150,6 +152,7 @@ const experiences = [
   {
     title: 'Le Wagon Coding Bootcamp',
     company_name: 'Le Wagon',
+    link: 'https://www.lewagon.com/',
     icon: lewagon,
     iconBg: '#fff',
     date: 'July 2020 - October',
@@ -162,6 +165,7 @@ const experiences = [
   {
     title: 'English Language Trainer',
     company_name: 'Learnlight',
+    link: 'https://www.learnlight.com/',
     icon: learnlight,
     iconBg: '#fff',
     date: 'September 2016 - July 2020',
@@ -173,6 +177,7 @@ const experiences = [
   {
     title: 'Academic Coordinator | Platform Administrator',
     company_name: 'American Language Academy',
+    link: 'https://www.americanlanguage.es/',
     icon: ala,
     iconBg: '#fff',
     date: 'July 2013 - September 2016',
@@ -191,6 +196,7 @@ const testimonials = [
     designation: 'Product Manager',
     company: 'ePages',
     image: donalImg,
+    linkedIn: 'https://www.linkedin.com/in/donal-omeara/',
   },
   {
     testimonial:
@@ -199,6 +205,7 @@ const testimonials = [
     designation: 'BDR',
     company: 'Confluent',
     image: ryanCorriganImg,
+    linkedIn: 'https://www.linkedin.com/in/-ryancorrigan/',
   },
   {
     testimonial:
@@ -207,6 +214,7 @@ const testimonials = [
     designation: 'Sales Leader',
     company: 'CRITEO',
     image: seanImg,
+    linkedIn: 'https://www.linkedin.com/in/seanmalkin8/',
   },
   {
     testimonial:
@@ -215,6 +223,7 @@ const testimonials = [
     designation: 'Profesora y Coordinadora Académica',
     company: 'Universidad Pontificia Comillas ICAI-ICADE',
     image: kelseyImg,
+    linkedIn: 'https://www.linkedin.com/in/kelsey-allyne-shawgo-949a6364/',
   },
 ];
 
@@ -222,7 +231,7 @@ const projects = [
   {
     name: 'MonkFlicks',
     description:
-      'A fun Netflix clone I made experimenting with Firebase as the "backend" - Firebase handles user auth. and acts as a store for all the film and series data. In the frontend I made use of styled-components to, well...style the components. ||I promise it\'s not a dangerous site - Google just thinks I\'m imitating NetFlicks to trick you.',
+      'A fun Netflix clone I made experimenting with Firebase as the "backend" - Firebase handles user auth. and acts as a store for all the film and series data. In the frontend I made use of styled-components.||I promise it\'s not a dangerous site - Google just thinks I\'m imitating NetFlicks to trick you.',
     tags: [
       {
         name: 'react',
@@ -266,7 +275,7 @@ const projects = [
   {
     name: 'MonkFish, SeaWeed, Fishing Net',
     description:
-      'Based on "Rock, Paper, Scissors ||I wanted to practice and learn more Typescript but also how to write tests. Built with React, I used Vite for the development and Vitest to write the tests.',
+      'Based on "Rock, Paper, Scissors". ||I wanted to practice and learn more Typescript but also how to write tests. Built with React, I used Vite for the development and Vitest to write the tests.',
     tags: [
       {
         name: 'react&vite',
