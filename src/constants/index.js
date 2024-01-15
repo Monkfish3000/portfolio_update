@@ -16,10 +16,9 @@ import {
   lewagon,
   ala,
   learnlight,
-  carrent,
   monkflicks,
-  jobit,
-  tripguide,
+  spacenews,
+  monkfishseaweed,
   threejs,
   selenium,
   jest,
@@ -243,46 +242,49 @@ const projects = [
     prod_link: 'https://monkflicks.web.app/',
   },
   {
-    name: 'Job IT',
+    name: 'Spaaaace News',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Super fast Space News search tool - with instant search as user enters query ||I made this while experimenting with Vite and Tailwind to build out a real time search that queries a Space News API and displays the results immediately without the user having to hit enter.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'tailwind',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: spacenews,
+    source_code_link: 'https://github.com/Monkfish3000/space-news',
+    prod_link: 'https://spaaaace-news.netlify.app/',
   },
   {
-    name: 'Trip Guide',
+    name: 'MonkFish, SeaWeed, Fishing Net',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Based on "Rock, Paper, Scissors ||I wanted to practice and learn more Typescript but also how to write tests. Built with React, I used Vite for the development and Vitest to write the tests.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react&vite',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'vitest',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: monkfishseaweed,
+    source_code_link:
+      'https://github.com/Monkfish3000/monkfish-seaweed-fishingnet',
+    prod_link: 'https://monkfish-seaweed-fishingnet.netlify.app/',
   },
 ];
 

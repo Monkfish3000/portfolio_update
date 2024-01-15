@@ -34,6 +34,8 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
 import monkflicks from './monkflicks.png';
+import spacenews from './space_news.png';
+import monkfishseaweed from './monkfish_seaweed.png';
 
 export {
   logo,
@@ -68,4 +70,6 @@ export {
   jobit,
   tripguide,
   monkflicks,
+  spacenews,
+  monkfishseaweed,
 };
