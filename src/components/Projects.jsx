@@ -2,7 +2,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github, live } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -39,8 +39,8 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, '_blank')}
             >
               <img
-                src={github}
-                alt={github}
+                src={live}
+                alt={live}
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -74,7 +74,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -103,4 +103,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Projects, '');

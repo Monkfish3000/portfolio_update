@@ -34,16 +34,16 @@
 }
 
 .blue-gradient {
-  background: #0000ff; /* fallback for old browsers */
+  background: #0000ff; /* Fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #4b6cb7,
-    /* lighter blue */ #182848 /* darker blue */
+    /* Lighter blue */ #6699cc /* Adjusted lighter blue */
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #4b6cb7,
-    /* lighter blue */ #182848 /* darker blue */
+    /* Lighter blue */ #6699cc /* Adjusted lighter blue */
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
