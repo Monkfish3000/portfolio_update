@@ -1,6 +1,7 @@
 import {
   creator,
   web,
+  backend,
   javascript,
   typescript,
   html,
@@ -15,9 +16,9 @@ import {
   lewagon,
   ala,
   learnlight,
-  carrent,
-  jobit,
-  tripguide,
+  monkflicks,
+  spacenews,
+  monkfishseaweed,
   threejs,
   selenium,
   jest,
@@ -55,6 +56,10 @@ const services = [
   {
     title: 'Front End Developer',
     icon: creator,
+  },
+  {
+    title: 'EdTech Developer',
+    icon: backend,
   },
 ];
 
@@ -161,7 +166,8 @@ const experiences = [
     iconBg: '#fff',
     date: 'September 2016 - July 2020',
     points: [
-      'Before turning to web development, I worked as a Language Trainer in Madrid and Barcelona, collaborating closely with the Director of International Affairs at the CNMV in Madrid as a language coordinator. In Barcelona, I offered English language support at major firms like Allianz, CaixaBank, eDreams, Endesa, and Naturgy.',
+      'At Learnlight I delivered language training to some of the biggest companies on the planet but my sessions in both tech. start-ups and big tech. companies with groups of developers were always the most exciting for me and sparked something in me that inspired me to learn to code.',
+      'I worked as a Language Trainer in Madrid and Barcelona. I offered English language support at major firms like Allianz, CaixaBank, eDreams, Endesa, and Naturgy.',
     ],
   },
   {
@@ -171,7 +177,8 @@ const experiences = [
     iconBg: '#fff',
     date: 'July 2013 - September 2016',
     points: [
-      'Key administrator of the in-house LMS (Learning Management System) platform. My responsibilities included daily maintenance and updates of the platform, designing new educational content, bug-fixing as well as training teachers on how to use the platform.',
+      'My first passion was teaching. In 2011 in Greenwich, London I trained as an ESL teacher I moved to Spain about a year later.',
+      'At ALA I was also the key administrator of the in-house LMS (Learning Management System) platform. My responsibilities included daily maintenance and updates of the platform, designing new educational content, bug-fixing as well as training teachers on how to use the platform.',
     ],
   },
 ];
@@ -213,16 +220,38 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'MonkFlicks',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A fun Netflix clone I made experimenting with Firebase as the "backend" - Firebase handles user auth. and acts as a store for all the film and series data. In the frontend I made use of styled-components to, well...style the components. ||I promise it\'s not a dangerous site - Google just thinks I\'m imitating NetFlicks to trick you.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'firebase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'styledcomponents',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: monkflicks,
+    source_code_link: 'https://github.com/Monkfish3000/monkflicks',
+    prod_link: 'https://monkflicks.web.app/',
+  },
+  {
+    name: 'Spaaaace News',
+    description:
+      'Super fast Space News search tool - with instant search as user enters query ||I made this while experimenting with Vite and Tailwind to build out a real time search that queries a Space News API and displays the results immediately without the user having to hit enter.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
@@ -230,50 +259,32 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: spacenews,
+    source_code_link: 'https://github.com/Monkfish3000/space-news',
+    prod_link: 'https://spaaaace-news.netlify.app/',
   },
   {
-    name: 'Job IT',
+    name: 'MonkFish, SeaWeed, Fishing Net',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Based on "Rock, Paper, Scissors ||I wanted to practice and learn more Typescript but also how to write tests. Built with React, I used Vite for the development and Vitest to write the tests.',
     tags: [
       {
-        name: 'react',
+        name: 'react&vite',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'vitest',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: monkfishseaweed,
+    source_code_link:
+      'https://github.com/Monkfish3000/monkfish-seaweed-fishingnet',
+    prod_link: 'https://monkfish-seaweed-fishingnet.netlify.app/',
   },
 ];
 
