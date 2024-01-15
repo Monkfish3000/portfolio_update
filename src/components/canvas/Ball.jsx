@@ -19,12 +19,7 @@ const Ball = (props) => {
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <sphereGeometry args={[1, 32, 32]} /> {/* Sphere geometry */}
-        <meshStandardMaterial
-          color="#ffffff"
-          polygonOffset
-          polygonOffsetFactor={-5}
-          flatShading
-        />
+        <meshStandardMaterial color="#ffffff" flatShading />
         <Decal
           map={decal}
           position={[0, 0, 1]}
