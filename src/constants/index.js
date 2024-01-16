@@ -209,21 +209,21 @@ const testimonials = [
   },
   {
     testimonial:
-      "Michael's enthusiasm and passion for front-end development are contagious. He's not just doing a job; he's following his calling.",
-    name: 'Sean Malkin',
-    designation: 'Sales Leader',
-    company: 'CRITEO',
-    image: seanImg,
-    linkedIn: 'https://www.linkedin.com/in/seanmalkin8/',
-  },
-  {
-    testimonial:
       "Michael's ability to translate complex technical concepts into easy-to-understand language is remarkable. He tackles challenges with patience and ingenuity. He's an excellent teacher and an asset to any team.",
     name: 'Kelsey Shawgo',
     designation: 'Profesora y Coordinadora Académica',
     company: 'Universidad Pontificia Comillas ICAI-ICADE',
     image: kelseyImg,
     linkedIn: 'https://www.linkedin.com/in/kelsey-allyne-shawgo-949a6364/',
+  },
+  {
+    testimonial:
+      "Michael's enthusiasm and passion for front-end development are contagious. He's not just doing a job; he's following his calling.",
+    name: 'Sean Malkin',
+    designation: 'Sales Leader',
+    company: 'CRITEO',
+    image: seanImg,
+    linkedIn: 'https://www.linkedin.com/in/seanmalkin8/',
   },
 ];
 
