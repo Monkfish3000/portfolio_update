@@ -16,7 +16,7 @@ const FeedBackCard = ({
 }) => {
   return (
     <motion.div
-      className="bg-black-200 p-10 rounded-3xl xs:w-[320px w-full]"
+      className="bg-black-200 p-5 rounded-3xl w-full"
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
     >
       <p className="text-white font-black text-[48px]">"</p>
@@ -55,7 +55,7 @@ const Feedbacks = () => {
           <h2 className={`${styles.sectionHeadText}`}>What Others Say.</h2>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-col gap-7`}>
         {testimonials.map((test, idx) => (
           <FeedBackCard key={test.name} index={idx} {...test} />
         ))}
