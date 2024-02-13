@@ -22,6 +22,7 @@ import {
   threejs,
   selenium,
   jest,
+  monkfishfood,
 } from '../assets';
 
 import ryanCorriganImg from '../assets/images/ryan.png';
@@ -229,26 +230,27 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'MonkFlicks',
+    name: 'MonkFish Food',
     description:
-      'A fun Netflix clone I made experimenting with Firebase as the "backend" - Firebase handles user auth. and acts as a store for all the film and series data. In the frontend I made use of styled-components.||I promise it\'s not a dangerous site - Google just thinks I\'m imitating NetFlicks to trick you.',
+      'A simple recipe saving site for users to browse and share the favourite monkfish-themed recipes. Built with Next JS and using AWS to store the images and MongoDB to save the recipes',
     tags: [
       {
-        name: 'react',
+        name: 'react&vite',
         color: 'blue-text-gradient',
       },
       {
-        name: 'firebase',
+        name: 'mongodb',
         color: 'green-text-gradient',
       },
       {
-        name: 'styledcomponents',
+        name: 'nextjs',
         color: 'pink-text-gradient',
       },
     ],
-    image: monkflicks,
-    source_code_link: 'https://github.com/Monkfish3000/monkflicks',
-    prod_link: 'https://monkflicks.web.app/',
+    image: monkfishfood,
+    source_code_link: 'https://github.com/Monkfish3000/next-food',
+    prod_link:
+      'https://next-food-axgvi98lj-michaels-projects-018a3892.vercel.app/',
   },
   {
     name: 'Spaaaace News',
@@ -272,6 +274,29 @@ const projects = [
     source_code_link: 'https://github.com/Monkfish3000/space-news',
     prod_link: 'https://spaaaace-news.netlify.app/',
   },
+  {
+    name: 'MonkFlicks',
+    description:
+      'A fun Netflix clone I made experimenting with Firebase as the "backend" - Firebase handles user auth. and acts as a store for all the film and series data. In the frontend I made use of styled-components.||I promise it\'s not a dangerous site - Google just thinks I\'m imitating NetFlicks to trick you.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'firebase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'styledcomponents',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: monkflicks,
+    source_code_link: 'https://github.com/Monkfish3000/monkflicks',
+    prod_link: 'https://monkflicks.web.app/',
+  },
+
   {
     name: 'MonkFish, SeaWeed, Fishing Net',
     description:

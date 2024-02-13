@@ -36,6 +36,7 @@ import tripguide from './tripguide.png';
 import monkflicks from './monkflicks.png';
 import spacenews from './space_news.png';
 import monkfishseaweed from './monkfish_seaweed.png';
+import monkfishfood from './monkfish_food.png';
 
 export {
   logo,
@@ -72,4 +73,5 @@ export {
   monkflicks,
   spacenews,
   monkfishseaweed,
+  monkfishfood,
 };

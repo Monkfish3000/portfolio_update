@@ -24,9 +24,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] md:w-3/4 w-full"
       >
-        <div className="relative w-full h-[320px]">
+        <div className="relative w-full h-[200px]">
           <img
             src={image}
             alt={name}
@@ -34,7 +34,6 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {/*TODO - update urls */}
             <div
               className="blue-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               onClick={() => window.open(prod_link, '_blank')}
