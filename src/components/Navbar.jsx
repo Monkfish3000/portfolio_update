@@ -46,7 +46,8 @@ const Navbar = () => {
                 setActive(title);
               }}
             >
-              <a href={`#${id}`}>{title}</a>
+              {/* TODO - update blog link */}
+              <a href={id === 'blog' ? '' : `#${id}`}>{title}</a>
             </li>
           ))}
         </ul>
