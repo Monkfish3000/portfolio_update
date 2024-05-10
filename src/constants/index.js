@@ -254,7 +254,7 @@ const projects = [
     image: monkfishfood,
     source_code_link: 'https://github.com/Monkfish3000/next-food',
     prod_link:
-      'https://next-food-axgvi98lj-michaels-projects-018a3892.vercel.app/',
+      'https://food-monkfish.vercel.app/',
   },
   {
     name: 'Spaaaace News',
