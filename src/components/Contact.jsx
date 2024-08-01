@@ -1,18 +1,18 @@
-import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
-import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
   const [loading, setLoading] = useState(false);
 
@@ -30,31 +30,31 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_USER_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_USER_ID,
         {
           from_name: form.name,
-          to_name: 'Michael',
+          to_name: "Michael",
           from_email: form.email,
-          to_email: 'michaelsutcliffe86@gmail.com',
+          to_email: "michaelsutcliffe86@gmail.com",
           message: form.message,
         },
-        process.env.EMAILJS_API_KEY
+        import.meta.env.VITE_EMAILJS_API_KEY
       )
       .then(
         () => {
           setLoading(false);
-          alert('Thanks for your message!');
+          alert("Thanks for your message!");
           setForm({
-            name: '',
-            email: '',
-            message: '',
+            name: "",
+            email: "",
+            message: "",
           });
         },
         (err) => {
           setLoading(false);
           console.log(err);
-          alert('Something went wrong!');
+          alert("Something went wrong!");
         }
       );
   };
@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
+        variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={`${styles.sectionSubText}`}>Send me a message</p>
@@ -109,13 +109,13 @@ const Contact = () => {
             className="bg-tertiary py-3 px-8 w-fit text-white outline-none font-bold shadow-md shadow-primary rounded-xl"
             type="submit"
           >
-            {loading ? 'Sending...' : 'Send'}
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
       <motion.div
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
       >
         <EarthCanvas />
       </motion.div>
@@ -123,4 +123,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, 'contact');
+export default SectionWrapper(Contact, "contact");
