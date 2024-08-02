@@ -1,13 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState();
   const [toggle, setToggle] = useState();
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (animate) {
+      const timer = setTimeout(() => {
+        setAnimate(false);
+      }, 500); // Match the animation duration
+      return () => clearTimeout(timer);
+    }
+  }, [animate]);
 
   return (
     <nav
@@ -19,7 +29,7 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
-            setActive('');
+            setActive("");
 
             window.scrollTo(0, 0);
           }}
@@ -40,14 +50,23 @@ const Navbar = () => {
             <li
               key={id}
               className={`${
-                active === title ? 'text-white' : 'text-secondary'
-              } hover:text-white font-medium cursor-pointer`}
+                active === title ? "text-white" : "text-secondary"
+              } hover:text-white font-medium cursor-pointer ${
+                title === "Blog" ? "animate-pop" : ""
+              }`}
               onClick={() => {
                 setActive(title);
               }}
             >
-              {/* TODO - update blog link */}
-              <a href={id === 'blog' ? '' : `#${id}`}>{title}</a>
+              <a
+                rel="noopener noreferrer"
+                target={id === "blog" ? "_blank" : ""}
+                href={
+                  id === "blog" ? "http://www.fromthefishpond.dev" : `#${id}`
+                }
+              >
+                {title}
+              </a>
             </li>
           ))}
         </ul>
@@ -60,7 +79,7 @@ const Navbar = () => {
           />
           <div
             className={`${
-              !toggle ? 'hidden' : 'flex'
+              !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
@@ -68,14 +87,14 @@ const Navbar = () => {
                 <li
                   key={id}
                   className={`${
-                    active === title ? 'text-white' : 'text-secondary'
+                    active === title ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(title);
                   }}
                 >
-                  <a href={`#${id}`}>{title}</a>
+                  {<a href={`#${id}`}>{title}</a>}
                 </li>
               ))}
             </ul>
